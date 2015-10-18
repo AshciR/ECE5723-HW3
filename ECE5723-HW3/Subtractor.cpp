@@ -17,22 +17,15 @@ i1(&a), i2(&b), o1(&diff)
 }
 void Subtractor::evl () {
     
-    bus comp(4); // the bus that holds the 2s complement
+    bus comp; // the bus that holds the 2s complement
+    bus tempAns; // holds the answer before truncating
     
-    comp = *i2;
-    comp = ~comp + "1";
+    comp = ~(*i2) + "1"; // Do 2s complement on Bus B
     
-    std::cout << "The b is: " << *i2 << std::endl;
-    std::cout << "The complemented value is: " << comp << std::endl;
+    /* Logic Subtraction is equal to bus A + the 2s complement of bus B */
+    tempAns = *i1 + comp;
     
+    /* Get rid of the MSB, to get the correct value */
+    *o1 = tempAns.range(tempAns.length() - 2, 0);
     
-//    Adder * adder = new Adder(a, b, cin, cout, sum);
-//    adder->evl();
-//
-//    
-//    bus result(i1->length() + 1);
-//    result = *i1 + *i2 + *i3;
-//    int leftIndex = result.length() - 1;
-//    *o2 = result.at(leftIndex);
-//    *o1 = result.range(leftIndex-1, 0);
 }

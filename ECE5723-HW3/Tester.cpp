@@ -76,12 +76,15 @@ void testAdder(){
 
 void testSubtractor(){
     
-    bus a ("0101"); // 5
-    bus b ("0010"); // 2
-    bus diff(4);
+    bus a ("00000111"); // 7
+    bus b ("00000010"); // 2
+    bus diff;
     
     Subtractor * sub = new Subtractor(a, b, diff);
     sub->evl();
     
+    std::cout << "Subtracting 7 - 2\n";
+    std::cout << "The difference is: " << diff << std::endl;
+
 }
 
