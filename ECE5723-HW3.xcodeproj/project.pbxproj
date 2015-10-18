@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13E0A58B1BD3F35B005E8394 /* utilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A5891BD3F35B005E8394 /* utilityFunctions.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E0A58E1BD3F4F7005E8394 /* Tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A58D1BD3F4F7005E8394 /* Tester.cpp */; settings = {ASSET_TAGS = (); }; };
+		13E0A5911BD3F91C005E8394 /* classVectorPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A58F1BD3F91C005E8394 /* classVectorPrimitives.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC7A1BD05662004DBAF2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		13E0A58A1BD3F35B005E8394 /* utilityFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilityFunctions.h; sourceTree = "<group>"; };
 		13E0A58C1BD3F4C3005E8394 /* Tester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tester.h; sourceTree = "<group>"; };
 		13E0A58D1BD3F4F7005E8394 /* Tester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tester.cpp; sourceTree = "<group>"; };
+		13E0A58F1BD3F91C005E8394 /* classVectorPrimitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classVectorPrimitives.cpp; sourceTree = "<group>"; };
+		13E0A5901BD3F91C005E8394 /* classVectorPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classVectorPrimitives.h; sourceTree = "<group>"; };
 		13E4EC771BD05662004DBAF2 /* ECE5723-HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECE5723-HW3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E4EC7A1BD05662004DBAF2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,11 +66,13 @@
 		13E4EC791BD05662004DBAF2 /* ECE5723-HW3 */ = {
 			isa = PBXGroup;
 			children = (
+				13E0A58F1BD3F91C005E8394 /* classVectorPrimitives.cpp */,
+				13E0A5901BD3F91C005E8394 /* classVectorPrimitives.h */,
+				13E4EC7A1BD05662004DBAF2 /* main.cpp */,
+				13E0A58D1BD3F4F7005E8394 /* Tester.cpp */,
+				13E0A58C1BD3F4C3005E8394 /* Tester.h */,
 				13E0A5891BD3F35B005E8394 /* utilityFunctions.cpp */,
 				13E0A58A1BD3F35B005E8394 /* utilityFunctions.h */,
-				13E4EC7A1BD05662004DBAF2 /* main.cpp */,
-				13E0A58C1BD3F4C3005E8394 /* Tester.h */,
-				13E0A58D1BD3F4F7005E8394 /* Tester.cpp */,
 			);
 			path = "ECE5723-HW3";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				13E0A58B1BD3F35B005E8394 /* utilityFunctions.cpp in Sources */,
 				13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */,
 				13E0A58E1BD3F4F7005E8394 /* Tester.cpp in Sources */,
+				13E0A5911BD3F91C005E8394 /* classVectorPrimitives.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

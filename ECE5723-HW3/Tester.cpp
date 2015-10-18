@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "utilityFunctions.h"
+#include "classVectorPrimitives.h"
 
 void testUtil(){
     
@@ -34,5 +35,20 @@ void testAdder(){
     std::cout << "1 + 1: " << std::endl;
     std::cout << "The sum is: " << sum << std::endl;
     std::cout << "The carry out is: " << co << std::endl;
+    
+}
+
+void testBus(){
+    
+    bus a ("10011001");
+    bus b ("10000001");
+    
+    std::cout << "Making 2 8-bit buses\n";
+    std::cout << "The value on bus a is: " << a << std::endl;
+    std::cout << "The value on bus b is: " << b << std::endl;
+    
+    std::cout << "The value a & b is: " << (a&b) << std::endl;
+    std::cout << "The value a | b is: " << (a|b) << std::endl;
+    
     
 }

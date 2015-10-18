@@ -11,5 +11,6 @@
 
 void testUtil(void);
 void testAdder(void);
+void testBus(void);
 
 #endif /* Tester_h */
