@@ -13,5 +13,6 @@ void testUtil(void);
 void testAnd(void);
 void testBus(void);
 void testAdder(void);
+void testSubtractor(void);
 
 #endif /* Tester_h */

@@ -9,6 +9,7 @@
 #include <iostream>
 #include "utilityFunctions.h"
 #include "classVectorPrimitives.h"
+#include "Subtractor.h"
 
 void testUtil(){
     
@@ -72,3 +73,15 @@ void testAdder(){
     
     
 }
+
+void testSubtractor(){
+    
+    bus a ("0101"); // 5
+    bus b ("0010"); // 2
+    bus diff(4);
+    
+    Subtractor * sub = new Subtractor(a, b, diff);
+    sub->evl();
+    
+}
+

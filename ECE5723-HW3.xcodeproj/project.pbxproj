@@ -10,6 +10,7 @@
 		13E0A58B1BD3F35B005E8394 /* utilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A5891BD3F35B005E8394 /* utilityFunctions.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E0A58E1BD3F4F7005E8394 /* Tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A58D1BD3F4F7005E8394 /* Tester.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E0A5911BD3F91C005E8394 /* classVectorPrimitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A58F1BD3F91C005E8394 /* classVectorPrimitives.cpp */; settings = {ASSET_TAGS = (); }; };
+		13E0A5931BD43D28005E8394 /* Subtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A5921BD43D28005E8394 /* Subtractor.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC7A1BD05662004DBAF2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		13E0A58D1BD3F4F7005E8394 /* Tester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tester.cpp; sourceTree = "<group>"; };
 		13E0A58F1BD3F91C005E8394 /* classVectorPrimitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = classVectorPrimitives.cpp; sourceTree = "<group>"; };
 		13E0A5901BD3F91C005E8394 /* classVectorPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classVectorPrimitives.h; sourceTree = "<group>"; };
+		13E0A5921BD43D28005E8394 /* Subtractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subtractor.cpp; sourceTree = "<group>"; };
+		13E0A5941BD43DE2005E8394 /* Subtractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subtractor.h; sourceTree = "<group>"; };
 		13E4EC771BD05662004DBAF2 /* ECE5723-HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECE5723-HW3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E4EC7A1BD05662004DBAF2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +76,8 @@
 				13E0A58C1BD3F4C3005E8394 /* Tester.h */,
 				13E0A5891BD3F35B005E8394 /* utilityFunctions.cpp */,
 				13E0A58A1BD3F35B005E8394 /* utilityFunctions.h */,
+				13E0A5921BD43D28005E8394 /* Subtractor.cpp */,
+				13E0A5941BD43DE2005E8394 /* Subtractor.h */,
 			);
 			path = "ECE5723-HW3";
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				13E0A58B1BD3F35B005E8394 /* utilityFunctions.cpp in Sources */,
 				13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */,
 				13E0A58E1BD3F4F7005E8394 /* Tester.cpp in Sources */,
+				13E0A5931BD43D28005E8394 /* Subtractor.cpp in Sources */,
 				13E0A5911BD3F91C005E8394 /* classVectorPrimitives.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

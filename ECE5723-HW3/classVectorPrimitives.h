@@ -104,7 +104,7 @@ public:
 		bus r(rSize, 'X');
 		int i;
 		for (i = rSize - 1; i >= 0; i--) {
-			r.v[i] = not(a.v.at(i));
+			r.v[i] = _not(a.v.at(i));
 		}
 		return r;
 	}
