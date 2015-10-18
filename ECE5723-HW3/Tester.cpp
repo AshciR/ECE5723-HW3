@@ -23,7 +23,7 @@ void testUtil(){
 
 }
 
-void testAdder(){
+void testAnd(){
     
     char a = '1';
     char b = '1';
@@ -49,6 +49,26 @@ void testBus(){
     
     std::cout << "The value a & b is: " << (a&b) << std::endl;
     std::cout << "The value a | b is: " << (a|b) << std::endl;
+    
+    
+}
+
+void testAdder(){
+    
+    bus a ("0001"); // 1
+    bus b ("0100"); // 4
+    bus sum(4);
+    bus cout, cin("0");
+    
+    Adder * adder = new Adder(a, b, cin, cout, sum);
+    adder->evl();
+    
+    std::cout << "The value on bus a is: " << a << std::endl;
+    std::cout << "The value on bus b is: " << b << std::endl;
+    
+    std::cout << "Adding 1 + 4\n";
+    std::cout << "The sum is: " << sum << std::endl;
+    std::cout << "The cout is: " << cout << std::endl;
     
     
 }

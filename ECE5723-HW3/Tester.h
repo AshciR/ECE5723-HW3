@@ -10,7 +10,8 @@
 #define Tester_h
 
 void testUtil(void);
-void testAdder(void);
+void testAnd(void);
 void testBus(void);
+void testAdder(void);
 
 #endif /* Tester_h */
