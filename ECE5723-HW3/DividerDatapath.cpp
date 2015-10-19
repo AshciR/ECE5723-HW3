@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "DivideDatapath.h"
+#include "DividerDatapath.h"
 
 DividerDatapath::DividerDatapath(bus &clk, bus &rst,
                                  bus &a_bus, bus &b_bus,
