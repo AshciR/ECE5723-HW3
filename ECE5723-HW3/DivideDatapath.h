@@ -1,16 +1,16 @@
 //
-//  DividerDatapath.h
+//  DivideDatapath.h
 //  ECE5723-HW3
 //
 //  Created by Richard Walker on 10/18/15.
 //  Copyright © 2015 Richard Walker. All rights reserved.
 //
 
-#include "classVectorPrimitives.h"
-#include "Subtractor.cpp"
+#ifndef DivideDatapath_h
+#define DivideDatapath_h
 
-#ifndef DividerDatapath_h
-#define DividerDatapath_h
+#include "classVectorPrimitives.h"
+#include "Subtractor.h"
 
 class DividerDatapath{
     
@@ -44,4 +44,4 @@ public:
     
 };
 
-#endif /* DividerDatapath_h */
+#endif /* DivideDatapath_h */

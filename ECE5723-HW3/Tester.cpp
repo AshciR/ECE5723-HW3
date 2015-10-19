@@ -10,7 +10,7 @@
 #include "utilityFunctions.h"
 #include "classVectorPrimitives.h"
 #include "Subtractor.h"
-#include "DividerDatapath.h"
+//#include "DividerDatapath.h"
 
 void testUtil(){
     
@@ -89,29 +89,29 @@ void testSubtractor(){
 
 }
 
-void testDataPath(){
-    
-    bus clk ("P"); // Clock pulse
-    bus rst ("0");
-    bus a_bus("1010");
-    bus b_bus("0011");
-    bus r_bus, q_bus, en_quoCount("1"), greater("0");
-    
-    
-    DividerDatapath * DP = new DividerDatapath(clk, rst,
-                                               a_bus, b_bus,
-                                               r_bus, q_bus,
-                                               en_quoCount, greater);
-    
-    DP->eval();
-    std::cout << "Clock: " << clk << endl;
-    std::cout << "Reset: " << rst << endl;
-    std::cout << "A-Bus: " << a_bus << endl;
-    std::cout << "B-Bus: " << b_bus << endl;
-    std::cout << "Remainder: " << r_bus << endl;
-    std::cout << "Quotient: " << q_bus << endl;
-    std::cout << "Enable Q count: " << en_quoCount << endl;
-    std::cout << "Rem > B-Bus: " << greater << endl;
-    
-}
+//void testDataPath(){
+//    
+//    bus clk ("P"); // Clock pulse
+//    bus rst ("0");
+//    bus a_bus("1010");
+//    bus b_bus("0011");
+//    bus r_bus, q_bus, en_quoCount("1"), greater("0");
+//    
+//    
+//    DividerDatapath * DP = new DividerDatapath(clk, rst,
+//                                               a_bus, b_bus,
+//                                               r_bus, q_bus,
+//                                               en_quoCount, greater);
+//    
+//    DP->eval();
+//    std::cout << "Clock: " << clk << endl;
+//    std::cout << "Reset: " << rst << endl;
+//    std::cout << "A-Bus: " << a_bus << endl;
+//    std::cout << "B-Bus: " << b_bus << endl;
+//    std::cout << "Remainder: " << r_bus << endl;
+//    std::cout << "Quotient: " << q_bus << endl;
+//    std::cout << "Enable Q count: " << en_quoCount << endl;
+//    std::cout << "Rem > B-Bus: " << greater << endl;
+//    
+//}
 
