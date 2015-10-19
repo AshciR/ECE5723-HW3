@@ -9,6 +9,8 @@
 #ifndef Subtractor_h
 #define Subtractor_h
 
+#include "classVectorPrimitives.h"
+
 class Subtractor {
     bus *i1, *i2, *o1;
 public:

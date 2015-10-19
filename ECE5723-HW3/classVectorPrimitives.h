@@ -2,6 +2,9 @@
 #include "utilityFunctions.h"
 #include <math.h>
 
+#ifndef utilityFunctions_h
+#define utilityFunctions_h
+
 using namespace std;
 
 #define MIN(a,b) ((a<b)?a:b);
@@ -386,3 +389,5 @@ class Memory{
 		void init (const string& filename);
 		void dump (const string& filename);
 };
+
+#endif

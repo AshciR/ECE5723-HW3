@@ -6,11 +6,11 @@
 //  Copyright © 2015 Richard Walker. All rights reserved.
 //
 
-#include "classVectorPrimitives.h"
-#include "Subtractor.h"
-
 #ifndef DivideDatapath_h
 #define DivideDatapath_h
+
+#include "classVectorPrimitives.h"
+#include "Subtractor.h"
 
 class DividerDatapath{
     

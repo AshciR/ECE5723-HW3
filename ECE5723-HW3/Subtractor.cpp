@@ -6,8 +6,6 @@
 //  Copyright © 2015 Richard Walker. All rights reserved.
 //
 
-#include <stdio.h>
-#include "classVectorPrimitives.h"
 #include "Subtractor.h"
 
 Subtractor::Subtractor(bus& a, bus& b, bus& diff) :

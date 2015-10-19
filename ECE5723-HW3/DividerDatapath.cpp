@@ -6,7 +6,6 @@
 //  Copyright © 2015 Richard Walker. All rights reserved.
 //
 
-#include <stdio.h>
 #include "DividerDatapath.h"
 
 DividerDatapath::DividerDatapath(bus &clk, bus &rst,
