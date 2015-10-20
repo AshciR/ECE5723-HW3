@@ -15,5 +15,6 @@ void testBus(void);
 void testAdder(void);
 void testSubtractor(void);
 void testDataPath(void);
+void testController(void);
 
 #endif /* Tester_h */

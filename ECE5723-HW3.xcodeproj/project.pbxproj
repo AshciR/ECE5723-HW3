@@ -13,6 +13,7 @@
 		13E0A5931BD43D28005E8394 /* Subtractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A5921BD43D28005E8394 /* Subtractor.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E0A59D1BD46C21005E8394 /* DividerDatapath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E0A59C1BD46C21005E8394 /* DividerDatapath.cpp */; settings = {ASSET_TAGS = (); }; };
 		13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13E4EC7A1BD05662004DBAF2 /* main.cpp */; };
+		13F840161BD6F49600F4B42D /* DividerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13F840151BD6F49600F4B42D /* DividerController.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		13E0A59C1BD46C21005E8394 /* DividerDatapath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DividerDatapath.cpp; sourceTree = "<group>"; };
 		13E4EC771BD05662004DBAF2 /* ECE5723-HW3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ECE5723-HW3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E4EC7A1BD05662004DBAF2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		13F840141BD6F2EF00F4B42D /* DividerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DividerController.h; sourceTree = "<group>"; };
+		13F840151BD6F49600F4B42D /* DividerController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DividerController.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				13E0A58C1BD3F4C3005E8394 /* Tester.h */,
 				13E0A5891BD3F35B005E8394 /* utilityFunctions.cpp */,
 				13E0A58A1BD3F35B005E8394 /* utilityFunctions.h */,
+				13F840141BD6F2EF00F4B42D /* DividerController.h */,
+				13F840151BD6F49600F4B42D /* DividerController.cpp */,
 			);
 			path = "ECE5723-HW3";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				13E0A59D1BD46C21005E8394 /* DividerDatapath.cpp in Sources */,
 				13E4EC7B1BD05662004DBAF2 /* main.cpp in Sources */,
 				13E0A58E1BD3F4F7005E8394 /* Tester.cpp in Sources */,
+				13F840161BD6F49600F4B42D /* DividerController.cpp in Sources */,
 				13E0A5931BD43D28005E8394 /* Subtractor.cpp in Sources */,
 				13E0A5911BD3F91C005E8394 /* classVectorPrimitives.cpp in Sources */,
 			);
