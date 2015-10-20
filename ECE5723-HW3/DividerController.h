@@ -31,5 +31,9 @@ public:
     
     /* Evalulator */
     void eval();
+    
+    /* Print states */
+    void printValues();
+    
 };
 #endif /* DividerController_h */

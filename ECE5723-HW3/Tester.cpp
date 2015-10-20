@@ -8,9 +8,10 @@
 
 #include <iostream>
 #include "utilityFunctions.h"
-//#include "classVectorPrimitives.h"
-//#include "Subtractor.h"
+#include "classVectorPrimitives.h"
+#include "Subtractor.h"
 #include "DividerDatapath.h"
+#include "DividerController.h"
 
 void testUtil(){
     
@@ -115,6 +116,40 @@ void testDataPath(){
 }
 
 void testController(){
+    
+    /* Initally values */
+    bus clk ("P"); // Clock pulse
+    bus rst ("0");
+    bus go("P");
+    bus gtr("1");
+    bus eql("0");
+    bus les("0");
+    bus en_quo, ready;
+    
+    DividerController * DC = new DividerController(clk, rst, go, gtr, eql, les, en_quo, ready);
+    
+    std::cout << "The inital values:\n";
+    DC->printValues();
+    
+    DC->eval();
+    std::cout << "\nAfter evaluation:\n";
+    DC->printValues();
+    
+    DC->eval();
+    std::cout << "\nAfter evaluation:\n";
+    DC->printValues();
+    
+    /* Next values */
+    clk = "P";
+    rst = "0";
+    go = "0";
+    gtr = "0";
+    eql = "1";
+    les = "0";
+    
+    DC->eval();
+    std::cout << "\nAfter evaluation:\n";
+    DC->printValues();
     
 }
 

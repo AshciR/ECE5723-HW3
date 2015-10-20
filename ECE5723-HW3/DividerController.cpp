@@ -156,3 +156,18 @@ void DividerController::eval(){
     }
     
 }
+
+void DividerController::printValues(){
+    
+    std::cout << "Clk: " << *clk << endl;
+    std::cout << "Reset: " << *rst << endl;
+    std::cout << "Go: " << *go << endl;
+    std::cout << "Greater: " << *gtr << endl;
+    std::cout << "Equal: " << *eql << endl;
+    std::cout << "Lesser: " << *les << endl;
+    std::cout << "Enable Quo: " << *en_quo << endl;
+    std::cout << "Ready: " << *ready << endl;
+    std::cout << "Present State: " << Pstate << endl;
+    std::cout << "Next State: " << Nstate << endl;
+    
+}
