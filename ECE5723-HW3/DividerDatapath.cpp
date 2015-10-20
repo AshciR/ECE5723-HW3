@@ -26,15 +26,24 @@ DividerDatapath::DividerDatapath(bus &clk, bus &rst,
 
 void DividerDatapath::eval(){
     
-    //upCounterRaE (bus& D, bus& C, bus& R, bus& L, bus& E, bus& Q);
-    //
+    /* Needed for the Up Counter constructor */
     bus D; // Loaded Count Data (N/A)
     bus L; // Load trigger (N/A)
     
     /* Wire up the internal modules */
     this->quotient = new upCounterRaE(D, *this->clk, *this->rst, L, *this->en_quoCount, *this->q_bus);
+    this->subtract = new Subtractor(this->subtract_result, *this->b_bus, this->subtract_result);
+    this->remChecker = new Comparator(*this->r_bus, *this->b_bus, *this->lesser, *this->equal, *this->greater);
     
-    // Subtractor(bus& a, bus& b, bus& diff);
-    this->subtract = new Subtractor(*this->a_bus, *this->b_bus, this->subtract_result);
+    /* If the quotient is 0, then it means you haven't subtracted yet
+       so use the inital value (a_bus) in the subtractor */
+    if (*this->q_bus == "0") {
+        this->r_bus = this->a_bus;
+    }
+    
+    /* Do the evaluations */
+    this->quotient->evl();
+    this->subtract->evl();
+    this->remChecker->evl();
     
 }
