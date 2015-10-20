@@ -31,8 +31,10 @@ void DividerDatapath::eval(){
     bus D; // Loaded Count Data (N/A)
     bus L; // Load trigger (N/A)
     
+    /* Wire up the internal modules */
     this->quotient = new upCounterRaE(D, *this->clk, *this->rst, L, *this->en_quoCount, *this->q_bus);
     
-    
+    // Subtractor(bus& a, bus& b, bus& diff);
+    this->subtract = new Subtractor(*this->a_bus, *this->b_bus, this->subtract_result);
     
 }

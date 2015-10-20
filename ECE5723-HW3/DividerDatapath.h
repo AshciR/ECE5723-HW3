@@ -22,6 +22,11 @@ class DividerDatapath{
     /* Controller signals */
     bus *en_quoCount; // enable the quotient counter
     bus *greater;     // the remainder is > B_bus
+    bus *equal;     // the remainder is = B_bus
+    bus *lesser;     // the remainder is < B_bus
+    
+    /* Internal buses */
+    bus subtract_result;
     
     /* The internal modules */
     upCounterRaE* quotient; // Counter that keep track of the quotient
