@@ -11,7 +11,7 @@
 DividerDatapath::DividerDatapath(bus &clk, bus &rst,
                                  bus &a_bus, bus &b_bus,
                                  bus &r_bus, bus q_bus,
-                                 bus &en_quoCount, bus &greater){
+                                 bus &en_quoCount, bus &greater, bus &equal, bus &lesser){
     /* Initialize the values */
     this->clk = &clk;
     this->rst = &rst;
@@ -21,6 +21,8 @@ DividerDatapath::DividerDatapath(bus &clk, bus &rst,
     this->q_bus = &q_bus;
     this->en_quoCount = &en_quoCount;
     this->greater = &greater;
+    this->equal = &equal;
+    this->lesser = &lesser;
     
 }
 

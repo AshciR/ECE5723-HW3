@@ -96,12 +96,14 @@ void testDataPath(){
     bus rst ("0");
     bus a_bus("1010");
     bus b_bus("0011");
-    bus r_bus, q_bus, en_quoCount("1"), greater("0");
+    bus en_quoCount("1");
+    bus r_bus, q_bus;
+    bus greater, equal, lesser;
     
     DividerDatapath * DP = new DividerDatapath(clk, rst,
                                                a_bus, b_bus,
                                                r_bus, q_bus,
-                                               en_quoCount, greater);
+                                               en_quoCount, greater, equal, lesser);
     
     DP->eval();
     std::cout << "Clock: " << clk << endl;
@@ -111,7 +113,9 @@ void testDataPath(){
     std::cout << "Remainder: " << r_bus << endl;
     std::cout << "Quotient: " << q_bus << endl;
     std::cout << "Enable Q count: " << en_quoCount << endl;
-    std::cout << "Rem > B-Bus: " << greater << endl;
+    std::cout << "Greater: " << greater << endl;
+    std::cout << "Equal: " << equal << endl;
+    std::cout << "Lesser: " << lesser << endl;
     
 }
 
@@ -150,6 +154,12 @@ void testController(){
     DC->eval();
     std::cout << "\nAfter evaluation:\n";
     DC->printValues();
+    
+}
+
+void testDivider(){
+    
+    // TODO
     
 }
 

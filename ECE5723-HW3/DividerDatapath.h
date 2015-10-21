@@ -39,7 +39,7 @@ public:
     DividerDatapath(bus &clk, bus &rst,
                     bus &a_bus, bus &b_bus,
                     bus &r_bus, bus q_bus,
-                    bus &en_quoCount, bus &greater);
+                    bus &en_quoCount, bus &greater, bus &equal, bus &lesser);
     
     /* Destructor */
     ~DividerDatapath();
