@@ -19,7 +19,7 @@ DividerDesign::DividerDesign(bus &clk, bus &rst,
     this->a_bus = &a_bus;
     this->b_bus = &b_bus;
     this->go = &go;
-    this->r_bus = &ready;
+    this->r_bus = &r_bus;
     this->q_bus = &q_bus;
     this->ready = &ready;
     
@@ -49,5 +49,11 @@ void DividerDesign::printValues() {
     std::cout << "Quotient: " << *q_bus << endl;
     std::cout << "Remainder: " << *r_bus << endl;
     std::cout << "Ready: " << *ready << endl;
-   
+    
+//    std::cout << "--- Datapath Values ---\n";
+//    DP->printValues();
+//    
+//    std::cout << "--- Controller Values ---\n";
+//    CT->printValues();
+//    std::cout << " ------------------------\n";
 }

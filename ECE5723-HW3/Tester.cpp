@@ -12,6 +12,7 @@
 #include "Subtractor.h"
 #include "DividerDatapath.h"
 #include "DividerController.h"
+#include "DividerDesign.h"
 
 void testUtil(){
     
@@ -94,8 +95,8 @@ void testDataPath(){
     
     bus clk ("P"); // Clock pulse
     bus rst ("0");
-    bus a_bus("1010");
-    bus b_bus("0011");
+    bus a_bus("1010"); // 10
+    bus b_bus("0011"); // 3
     bus en_quoCount("1");
     bus r_bus, q_bus;
     bus greater, equal, lesser;
@@ -106,17 +107,11 @@ void testDataPath(){
                                                en_quoCount, greater, equal, lesser);
     
     DP->eval();
-    std::cout << "Clock: " << clk << endl;
-    std::cout << "Reset: " << rst << endl;
-    std::cout << "A-Bus: " << a_bus << endl;
-    std::cout << "B-Bus: " << b_bus << endl;
-    std::cout << "Remainder: " << r_bus << endl;
-    std::cout << "Quotient: " << q_bus << endl;
-    std::cout << "Enable Q count: " << en_quoCount << endl;
-    std::cout << "Greater: " << greater << endl;
-    std::cout << "Equal: " << equal << endl;
-    std::cout << "Lesser: " << lesser << endl;
+    DP->printValues();
     
+    DP->eval();
+    DP->printValues();
+        
 }
 
 void testController(){
@@ -159,7 +154,24 @@ void testController(){
 
 void testDivider(){
     
-    // TODO
+    
+    bus clk = "P";
+    bus rst = "0";
+    bus a_bus = "101";  // 5
+    bus b_bus = "011";  // 3
+    bus go = "P";       // Go pulse
+    bus r_bus, q_bus, ready; // Output busses
+    
+    DividerDesign * divider = new DividerDesign(clk, rst, a_bus, b_bus, go, r_bus, q_bus, ready);
+    
+    // Keep looping until the divider is finished dividing
+    do {
+       
+        divider->eval();
+        divider->printValues();
+        
+    } while( !(ready == "P") ); // while the divider isn't finished
+    
     
 }
 

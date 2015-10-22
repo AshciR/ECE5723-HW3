@@ -113,7 +113,7 @@ void DividerController::eval(){
                 *ready = "0";
             }
             else{
-                *en_quo = "0";
+                *en_quo = "1";
                 *ready = "0";
             }
             break;
@@ -125,7 +125,7 @@ void DividerController::eval(){
                 *ready = "0";
             }
             else{
-                *en_quo = "1";
+                *en_quo = "0";
                 *ready = "0";
             }
             break;

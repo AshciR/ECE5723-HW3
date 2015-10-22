@@ -27,18 +27,21 @@ class DividerDatapath{
     
     /* Internal buses */
     bus subtract_result;
+    bus which_miniuend; // bus that holds the miniuend depending on if the quotient is 0
+    bus miniuend;
     
     /* The internal modules */
     upCounterRaE* quotient; // Counter that keep track of the quotient
     Comparator* remChecker; // Comparator that determines if remainder > b_bus
     Subtractor* subtract;   // The substractor
+    dRegisterRa* miniuend_reg;  // The miniuend
     
 public:
     
     /* Constructor */
     DividerDatapath(bus &clk, bus &rst,
                     bus &a_bus, bus &b_bus,
-                    bus &r_bus, bus q_bus,
+                    bus &r_bus, bus &q_bus,
                     bus &en_quoCount, bus &greater, bus &equal, bus &lesser);
     
     /* Destructor */
@@ -46,6 +49,9 @@ public:
     
     /* Evalulator */
     void eval();
+    
+    /* Print the values on the lines */
+    void printValues();
     
 };
 
